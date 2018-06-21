@@ -1,0 +1,33 @@
+{
+  "name": "wepy-ts",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "an example project to play with wepy & typescript",
+  "repository": "git@github.com:Jimexist/wepy-ts.git",
+  "author": "Jiayu Liu <jimexist@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "npm run lint",
+    "lint": "tslint --project .",
+    "build": "wepy build",
+    "dev": "wepy build --watch"
+  },
+  "lint-staged": {
+    "*.{wpy,ts}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "wepy": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/wepy": "^1.7.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.5",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2",
+    "wepy-compiler-typescript": "^1.5.9"
+  }
+}
