@@ -28,6 +28,7 @@
     "prettier": "^1.13.5",
     "tslint": "^5.10.0",
     "typescript": "^2.9.2",
+    "wepy-cli": "^1.7.3",
     "wepy-compiler-typescript": "^1.5.9"
   }
 }
